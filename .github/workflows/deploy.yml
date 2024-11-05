@@ -10,8 +10,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions: 
-      pages: write
-      id-token: write
       contents: write
     steps:
       - name: Checkout repository
@@ -20,7 +18,7 @@ jobs:
       # Step para configurar o GitHub Pages para usar a branch main e o caminho root
       - name: Configure GitHub Pages to use branch 'main' and path 'root'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }} 
           REPO_NAME: ${{ github.event.repository.name }}
         run: |
