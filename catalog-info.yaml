@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "blog-123"
+  description: "asdasdqwe"
+  annotations:
+    github.com/project-slug: sjflausino/blog-123
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/demo"
