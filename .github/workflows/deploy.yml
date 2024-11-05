@@ -1,7 +1,7 @@
 # .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
-on:
+on: 
   push:
     branches:
       - main  # Executa a ação em qualquer push na branch 'main'
